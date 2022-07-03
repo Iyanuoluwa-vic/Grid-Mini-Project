@@ -46,7 +46,7 @@ h2,
 h3 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
@@ -184,27 +184,30 @@ Hero
 Cards 
 =====================
 */
-h1 {
-  width: 90%;
+.title {
   text-align: center;
 }
-.center {
-  width: 90%;
+
+.cards {
+  padding: 4rem 0;
+}
+
+.cards-center {
+  width: 80vw;
   max-width: 1170px;
   margin: 2rem auto;
 }
 
-article {
-  border: 1px solid black;
+.card {
+  border: 1px solid var(--darkGray);
+  margin-bottom: 3rem;
 }
 
-.center {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
+.card-info {
+  padding: 1rem;
 }
 
-.icon {
+.card-footer {
   background-color: var(--darkGray);
   display: grid;
   padding: 0.5rem 1rem;
@@ -212,6 +215,27 @@ article {
   justify-items: center;
 }
 
-a {
-  color: red;
+.card-footer span {
+  color: var(--primaryColor);
+}
+
+@media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
