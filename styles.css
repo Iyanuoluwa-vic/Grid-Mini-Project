@@ -79,6 +79,10 @@ p {
   color: var(--mainWhite);
 }
 
+li {
+  list-style: none;
+}
+
 /* 
 =====================
 Main Navbar
@@ -173,4 +177,41 @@ Hero
       ),
       url(./images/size-image-2.jpeg) center/cover fixed no-repeat;
   }
+}
+
+/* 
+=====================
+Cards 
+=====================
+*/
+h1 {
+  width: 90%;
+  text-align: center;
+}
+.center {
+  width: 90%;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+
+article {
+  border: 1px solid black;
+}
+
+.center {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.icon {
+  background-color: var(--darkGray);
+  display: grid;
+  padding: 0.5rem 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+a {
+  color: red;
 }
