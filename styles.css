@@ -332,3 +332,36 @@ Tiles
     grid-area: i;
   }
 }
+
+/* 
+=====================
+layout
+=====================
+*/
+
+.layout-easy {
+  height: 100vh;
+}
+
+.layout-easy h1 {
+  margin-bottom: 0rem;
+  color: #fff;
+}
+.layout-easy .layout-titles {
+  background: var(--primaryColor);
+  text-align: center;
+}
+
+.layout-nav li {
+  padding: 1.5rem 1rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.layout-nav {
+  background: var(--darkGray);
+}
+
+.layout-section {
+  padding: 3rem 3rem;
+}
