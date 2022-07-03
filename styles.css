@@ -234,6 +234,20 @@ Cards
   }
 }
 
+/* another way to create a grid
+   we know the max width of the screen is 1170px
+      and we wanted 2rem of space between each card
+      so we can use the following formula:
+     [ max-width / (number of gap cards between each card * (16px*2rem of space between each card))]/numberOfCards
+
+
+     1170px / ( 2 * (16px*2rem)) / 3 = 368px
+*/
+.cards-center {
+  display: grid;
+  grid-template-columns: repeat(autofill, 368.6px);
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr;
