@@ -338,11 +338,6 @@ Tiles
 layout
 =====================
 */
-
-.layout-easy {
-  height: 100vh;
-}
-
 .layout-easy h1 {
   margin-bottom: 0rem;
   color: #fff;
@@ -353,7 +348,7 @@ layout
 }
 
 .layout-nav li {
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   text-transform: capitalize;
   font-size: 1.5rem;
 }
@@ -363,5 +358,60 @@ layout
 }
 
 .layout-section {
-  padding: 3rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
+
+.layout-aside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--primaryColor);
+  padding: 1rem;
+  justify-items: center;
+}
+
+.layout-footer p {
+  padding: 0.2rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+
+  text-align: center;
+}
+
+.layout-easy {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto auto;
+}
+
+@media screen and (min-width: 768px) {
+  .layout-nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+/* 
+@media screen and (min-width: 992px) {
+  .center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .layout-nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .layout-aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+} */
